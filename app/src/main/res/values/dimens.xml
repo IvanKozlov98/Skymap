@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="height">100dp</dimen>
+    <dimen name="height_120">120dp</dimen>
+    <dimen name="default_rectangle_size">64dp</dimen>
+    <dimen name="eight_margin">8dp</dimen>
+    <dimen name="progress_bar_len">150sp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_height">175dp</dimen>
+
+</resources>

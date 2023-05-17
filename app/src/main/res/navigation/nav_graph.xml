@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="itmo.skymap.ui.about.AboutFragment"
+        android:label="AboutFragment" />
+    <fragment
+        android:id="@+id/contactFragment"
+        android:name="itmo.skymap.ui.contact.ContactFragment"
+        android:label="ContactFragment" >
+        <action
+            android:id="@+id/contactToMain"
+            app:destination="@id/homeFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="itmo.skymap.ui.home.HomeFragment"
+        android:label="HomeFragment">
+        <action
+            android:id="@+id/action_homeFragment_to_waitingFragment"
+            app:destination="@id/waitingFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_spaceNavigatorActivity"
+            app:destination="@id/spaceNavigatorActivity" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigationSkyFragment"
+        android:name="itmo.skymap.ui.space_nav.NavigationSkyFragment"
+        android:label="NavigationSkyFragment" />
+
+    <activity
+        android:id="@+id/spaceNavigatorActivity"
+        android:name="itmo.skymap.navigator.activities.SpaceNavigatorActivity"
+        android:label="SpaceNavigatorActivity" />
+    <fragment
+        android:id="@+id/waitingFragment"
+        android:name="itmo.skymap.lookbeyond.activities.WaitingFragment"
+        android:label="fragment_waiting"
+        tools:layout="@layout/fragment_waiting">
+        <action
+            android:id="@+id/action_waitingFragment_to_spaceNavigatorActivity"
+            app:destination="@id/spaceNavigatorActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/earthFragment"
+        android:name="itmo.skymap.ui.earth.EarthFragment"
+        android:label="fragment_earth"
+        tools:layout="@layout/fragment_earth" />
+
+</navigation>

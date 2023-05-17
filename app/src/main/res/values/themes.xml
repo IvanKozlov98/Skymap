@@ -1,0 +1,54 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Skymap" parent="Theme.MaterialComponents.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/main_deep_space_color</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <item name="colorSurface">@color/very_dark_blue</item>
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/black</item>
+
+        <item name="mainBackground">@color/very_dark_blue</item>
+        <item name="buttonBackgroundColor">?attr/colorPrimary</item>
+        <item name="buttonTextColor">@android:color/white</item>
+        <item name="materialButtonStyle">@style/buttonStyle</item>
+        <item name="cardBackgroundColor">#201d2e</item>
+
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">false</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:fitsSystemWindows">false</item>
+
+        <item name="android:enforceNavigationBarContrast" tools:targetApi="q">false</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+
+        <item name="background">@android:color/transparent</item>
+        <item name="android:colorBackground">@android:color/transparent</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="textAppearanceHeadline6">@style/TextAppearance.App.Headline6</item>
+        <item name="textAppearanceHeadline5">@style/TextAppearance.App.Headline5</item>
+        <item name="textAppearanceHeadline4">@style/TextAppearance.App.Headline4</item>
+        <item name="textAppearanceBody1">@style/TextAppearance.AppCompat.Body1</item>
+
+
+        <item name="materialCalendarTheme">@style/DatePicker</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+    <style name="SplashTheme" parent="Theme.Skymap">
+        <item name="android:windowBackground">@drawable/splash_img</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">false</item>
+    </style>
+    
+    <style name="buttonStyle" parent="Widget.MaterialComponents.Button">
+        <item name="cornerRadius">16dp</item>
+    </style>
+</resources>
